@@ -5,6 +5,7 @@
       <mapping pattern="*.js.flow" type="Flow" />
       <mapping pattern="_models" type="PLAIN_TEXT" />
       <mapping pattern="entityHistoryProvider.ts" type="PLAIN_TEXT" />
+      <mapping pattern="ispServicesEntity" type="PLAIN_TEXT" />
       <mapping ext="ts___jb_tmp___" type="PLAIN_TEXT" />
       <mapping ext="clr" type="PLAIN_TEXT" />
       <mapping ext="gz" type="PLAIN_TEXT" />
