@@ -1,8 +1,6 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
-      <mapping pattern="*.js.flow" type="Flow" />
-      <mapping pattern="*.js.flow" type="Flow" />
       <mapping pattern="_models" type="PLAIN_TEXT" />
       <mapping pattern="entityHistoryProvider.ts" type="PLAIN_TEXT" />
       <mapping ext="ts___jb_tmp___" type="PLAIN_TEXT" />
