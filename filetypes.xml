@@ -28,6 +28,7 @@
       <mapping pattern="DataGrid" type="TypeScript JSX" />
       <mapping pattern="SelectionCellRenderer" type="TypeScript JSX" />
       <mapping pattern="NavBarLink" type="TypeScript JSX" />
+      <mapping pattern="_systemsUtils.ts" type="yarn.lock" />
     </extensionMap>
   </component>
 </application>
