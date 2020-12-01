@@ -1,8 +1,8 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="All Places" />
-    <option name="defaultScopeName" value="All Places" />
-    <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="customScope" value="Project 'delegation-management'" />
+    <option name="defaultScopeName" value="Project 'delegation-management'" />
+    <option name="SEARCH_SCOPE" value="Project 'delegation-management'" />
     <option name="FILE_MASK" value="!*.map, !*.chunk.js, *.ts, *.tsx, *.json, *.css, !*.generated.css, !*.min.js" />
     <mask>*.properties</mask>
     <mask>*.html</mask>
