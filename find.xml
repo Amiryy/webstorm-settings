@@ -3,6 +3,7 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="!*.json" />
     <mask>*.properties</mask>
     <mask>*.html</mask>
     <mask>*.jsp</mask>
@@ -29,5 +30,6 @@
     <mask>!*.fixture.tsx,!*.map, !*.chunk.js, *.ts, *.tsx, *.json, *.css, !*.generated.css, !*.min.js</mask>
     <mask>!.cache/common</mask>
     <mask>!*.map, !*.chunk.js, *.ts, *.tsx, *.json, *.css, !*.generated.css, !*.min.js</mask>
+    <mask>!*.json</mask>
   </component>
 </application>
