@@ -63,7 +63,7 @@
       <option name="CSS" value="true" />
     </context>
   </template>
-  <template name=":tsReactDumb" value="import * as React from &quot;react&quot;;&#10;import styled from &quot;styled-components&quot;;&#10;&#10;// region [[ Styles ]]&#10;const $name$View = styled.div``;&#10;// endregion&#10;&#10;//region [[ Props ]]&#10;export interface Props {}&#10;//endregion&#10;&#10;export function $name$({ ...props }: Props) {&#10;  return (&#10;    &lt;$name$View&gt;&#10;    &#10;    &lt;/$name$View&gt;&#10;  );&#10;}&#10;" description="styled dumb hooks component" toReformat="false" toShortenFQNames="true">
+  <template name=":tsReactDumb" value="import * as React from &quot;react&quot;;&#10;import styled from &quot;styled-components&quot;;&#10;&#10;// region [[ Styles ]]&#10;const $name$View = styled.div``;&#10;// endregion&#10;&#10;//region [[ Props ]]&#10;export interface Props {&#10;  className?: string;&#10;}&#10;//endregion&#10;&#10;export function $name$({ ...props }: Props) {&#10;  return (&#10;    &lt;$name$View className={props.className}&gt;&#10;    &#10;    &lt;/$name$View&gt;&#10;  );&#10;}&#10;" description="styled dumb hooks component" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="TypeScript" value="true" />
