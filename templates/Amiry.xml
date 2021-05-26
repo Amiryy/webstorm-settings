@@ -108,4 +108,10 @@
     <variable name="LABEL" expression="capitalize(spaceSeparated(NAME))" defaultValue="" alwaysStopAt="false" />
     <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
   </template>
+  <template name=":tsProvider" value="export class $name$Provider {&#10;  async provide(): Promise&lt;unknown&gt; {&#10;  }&#10;  // region [[ Singleton ]]&#10;  private static _instance: $name$Provider;&#10;  static get instance() {&#10;    if(!this._instance) {&#10;      this._instance = new $name$Provider();&#10;    }&#10;    return this._instance;&#10;  }&#10;  // endregion&#10;}" description="provider class declaration" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
 </templateSet>
