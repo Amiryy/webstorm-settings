@@ -114,4 +114,10 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name=":tsEntity" value="import { loggerCreator } from &quot;src/utils/logger&quot;&#10;&#10;const moduleLogger = loggerCreator(__filename);&#10;&#10;interface $name$EntityParams {&#10;  &#10;}&#10;&#10;export class $name$Entity {&#10;  constructor(data: $name$EntityParams) {&#10;    Object.assign(this, data);&#10;  }&#10;  static createMock(overrides?: Partial&lt;$name$EntityParams&gt;) {&#10;    return new $name$Entity({&#10;      ...overrides,&#10;    });&#10;  }&#10;}&#10;&#10;// utility - merges parameters as class members&#10;export interface $name$Entity extends $name$EntityParams {}&#10;" description="entity class declaration" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
 </templateSet>
