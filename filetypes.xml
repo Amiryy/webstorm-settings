@@ -3,6 +3,8 @@
     <extensionMap>
       <mapping ext="toml" type="Cookie storage file" />
       <mapping pattern="_models" type="PLAIN_TEXT" />
+      <mapping pattern=".huskyrc" type="PLAIN_TEXT" />
+      <mapping pattern=".lintstagedrc" type="PLAIN_TEXT" />
       <mapping pattern="entityHistoryProvider.ts" type="PLAIN_TEXT" />
       <mapping ext="ts___jb_tmp___" type="PLAIN_TEXT" />
       <mapping ext="gz" type="PLAIN_TEXT" />
