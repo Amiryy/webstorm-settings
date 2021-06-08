@@ -21,6 +21,7 @@
       <mapping pattern="locationInputModel" type="TypeScript" />
       <mapping pattern="stageModel" type="TypeScript" />
       <mapping pattern="imageSlideShowModel" type="TypeScript" />
+      <mapping pattern="_types" type="TypeScript" />
       <mapping pattern="storageKeys.ts" type="TypeScript" />
       <mapping pattern="actionExport" type="TypeScript" />
       <mapping pattern="requestModel.ts" type="TypeScript" />
