@@ -120,7 +120,7 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name=":tsQueryProvider" value="export class $name$Provider {&#10;  async provide(): Promise&lt;unknown&gt; {&#10;  }&#10;  query(): $name$Provider[&quot;provide&quot;]&gt; {&#10;    return [[&quot;$name$Provider.query&quot;, [] ], () =&gt; this.provide(...args)];&#10;  }&#10;  // region [[ Singleton ]]&#10;  private static _instance: $name$Provider;&#10;  static get instance() {&#10;    if(!this._instance) {&#10;      this._instance = new $name$Provider();&#10;    }&#10;    return this._instance;&#10;  }&#10;  // endregion&#10;}" description="query provider class declaration" toReformat="false" toShortenFQNames="true">
+  <template name=":tsQueryProvider" value="export class $name$Provider {&#10;  async provide(): Promise&lt;unknown&gt; {&#10;    return;&#10;  }&#10;  query(): QueryReturnType&lt;&quot;provide&quot;&gt; {&#10;    return [&#10;      [&quot;$name$Provider.query&quot;, [] ], () =&gt; this.provide()];&#10;  }&#10;  // region [[ Singleton ]]&#10;  private static _instance: $name$Provider;&#10;  static get instance() {&#10;    if(!this._instance) {&#10;      this._instance = new $name$Provider();&#10;    }&#10;    return this._instance;&#10;  }&#10;  // endregion&#10;}&#10;&#10;type QueryReturnType&lt;T extends keyof $name$Provider&gt; = [&#10;  [string, Array&lt;unknown&gt;],&#10;  () =&gt; ReturnType&lt;$name$Provider[T]&gt; | undefined&#10;]" description="query provider class declaration" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="TypeScript" value="true" />
