@@ -63,7 +63,7 @@
       <option name="CSS" value="true" />
     </context>
   </template>
-  <template name=":tsReactDumb" value="import * as React from &quot;react&quot;;&#10;import styled from &quot;styled-components&quot;;&#10;&#10;// region [[ Styles ]]&#10;const $name$View = styled.div``;&#10;// endregion&#10;&#10;//region [[ Props ]]&#10;export interface Props {&#10;  className?: string;&#10;}&#10;//endregion&#10;&#10;export function $name$({ ...props }: Props) {&#10;  return (&#10;    &lt;$name$View className={props.className}&gt;&#10;    &#10;    &lt;/$name$View&gt;&#10;  );&#10;}&#10;" description="styled dumb hooks component" toReformat="false" toShortenFQNames="true">
+  <template name=":tsReactDumb" value="import * as React from &quot;react&quot;;&#10;import styled, { css } from &quot;styled-components&quot;;&#10;&#10;const $name$View = styled.div`&#10;  ${(props: {}) =&gt; css``};&#10;`;&#10;&#10;export interface Props {}&#10;&#10;export const $name$ = ({ ...props }: Props) =&gt; {&#10;  return (&#10;    &lt;$name$View&gt;&#10;    &#10;    &lt;/$name$View&gt;&#10;  );&#10;};&#10;" description="styled dumb hooks component" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="TypeScript" value="true" />
@@ -92,41 +92,6 @@
   <template name="forof" value="for (const $item$ of $array$) {&#10;    &#10;}&#10;" description="generated a for-of loop block" toReformat="true" toShortenFQNames="true">
     <variable name="item" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="array" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-    </context>
-  </template>
-  <template name="asynfun" value="async function $name$() {&#10;    &#10;}&#10;" description="generates an async function" toReformat="true" toShortenFQNames="true">
-    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-    </context>
-  </template>
-  <template name="yp" value="$NAME$: yup.$TYPE$().label(&quot;$LABEL$&quot;).required()$CURSOR$" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="TYPE" expression="" defaultValue="&quot;string&quot;" alwaysStopAt="true" />
-    <variable name="LABEL" expression="capitalize(spaceSeparated(NAME))" defaultValue="" alwaysStopAt="false" />
-    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
-  </template>
-  <template name=":tsProvider" value="export class $name$Provider {&#10;  async provide(): Promise&lt;unknown&gt; {&#10;  }&#10;  // region [[ Singleton ]]&#10;  private static _instance: $name$Provider;&#10;  static get instance() {&#10;    if(!this._instance) {&#10;      this._instance = new $name$Provider();&#10;    }&#10;    return this._instance;&#10;  }&#10;  // endregion&#10;}" description="provider class declaration" toReformat="false" toShortenFQNames="true">
-    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
-  <template name=":tsEntity" value="import { loggerCreator } from &quot;src/utils/logger&quot;&#10;&#10;const moduleLogger = loggerCreator(__filename);&#10;&#10;interface $name$EntityParams {&#10;  &#10;}&#10;&#10;export class $name$Entity {&#10;  constructor(data: $name$EntityParams) {&#10;    Object.assign(this, data);&#10;  }&#10;  static createMock(overrides?: Partial&lt;$name$EntityParams&gt;) {&#10;    return new $name$Entity({&#10;      ...overrides,&#10;    });&#10;  }&#10;}&#10;&#10;// utility - merges parameters as class members&#10;export interface $name$Entity extends $name$EntityParams {}&#10;" description="entity class declaration" toReformat="false" toShortenFQNames="true">
-    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
-  <template name=":tsQueryProvider" value="export class $name$Provider {&#10;  async provide(): Promise&lt;unknown&gt; {&#10;    return;&#10;  }&#10;  query(): QueryReturnType&lt;&quot;provide&quot;&gt; {&#10;    return [&#10;      [&quot;$name$Provider.query&quot;, [] ], () =&gt; this.provide()];&#10;  }&#10;  // region [[ Singleton ]]&#10;  private static _instance: $name$Provider;&#10;  static get instance() {&#10;    if(!this._instance) {&#10;      this._instance = new $name$Provider();&#10;    }&#10;    return this._instance;&#10;  }&#10;  // endregion&#10;}&#10;&#10;type QueryReturnType&lt;T extends keyof $name$Provider&gt; = [&#10;  [string, Array&lt;unknown&gt;],&#10;  () =&gt; ReturnType&lt;$name$Provider[T]&gt; | undefined&#10;]" description="query provider class declaration" toReformat="false" toShortenFQNames="true">
-    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
-  <template name=":eslintDeps" value="// eslint-disable-next-line react-hooks/exhaustive-deps" description="// eslint-disable-next-line react-hooks/exhaustive-deps" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
