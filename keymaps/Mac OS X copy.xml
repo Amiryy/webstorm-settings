@@ -12,6 +12,12 @@
   <action id="ManageRecentProjects">
     <keyboard-shortcut first-keystroke="shift meta p" />
   </action>
+  <action id="Nx.NxNewGenerateActionGroup">
+    <keyboard-shortcut first-keystroke="shift meta g" />
+  </action>
+  <action id="NxLoadUnloadModules">
+    <keyboard-shortcut first-keystroke="shift meta j" />
+  </action>
   <action id="Tool_External Tools_OpenRealPath">
     <keyboard-shortcut first-keystroke="alt o" />
   </action>
