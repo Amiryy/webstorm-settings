@@ -4,7 +4,7 @@
     <property name="created">2018-07-29T10:58:15</property>
     <property name="ide">WebStorm</property>
     <property name="ideVersion">2018.2.0.0</property>
-    <property name="modified">2021-11-05T09:44:12</property>
+    <property name="modified">2021-11-05T11:29:39</property>
     <property name="originalScheme">Material Oceanic</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.4" />
@@ -31588,20 +31588,6 @@
         <option name="FOREGROUND" value="89ddff" />
       </value>
     </option>
-    <option name="PERL_ARRAY" baseAttributes="DEFAULT_IDENTIFIER" />
-    <option name="PERL_ARRAY_BUILTIN" baseAttributes="PERL_ARRAY" />
-    <option name="PERL_EMBED_MARKER" baseAttributes="DEFAULT_TEMPLATE_LANGUAGE_COLOR" />
-    <option name="PERL_GLOB_BUILTIN" baseAttributes="PERL_GLOB" />
-    <option name="PERL_HASH" baseAttributes="DEFAULT_IDENTIFIER" />
-    <option name="PERL_HASH_BUILTIN" baseAttributes="PERL_HASH" />
-    <option name="PERL_LABEL" baseAttributes="DEFAULT_IDENTIFIER" />
-    <option name="PERL_PACKAGE_CORE" baseAttributes="PERL_PACKAGE" />
-    <option name="PERL_PACKAGE_PRAGMA" baseAttributes="PERL_PACKAGE" />
-    <option name="PERL_SCALAR" baseAttributes="DEFAULT_IDENTIFIER" />
-    <option name="PERL_SCALAR_BUILTIN" baseAttributes="PERL_SCALAR" />
-    <option name="PERL_SUB" baseAttributes="DEFAULT_FUNCTION_CALL" />
-    <option name="PERL_SUB_BUILTIN" baseAttributes="PERL_SUB" />
-    <option name="PERL_XSUB" baseAttributes="PERL_SUB" />
     <option name="PHP_BAD_CHARACTER">
       <value>
         <option name="EFFECT_COLOR" value="ff5370" />
@@ -32910,8 +32896,8 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="XPATH.XPATH_NAME" baseAttributes="" />
-    <option name="XPATH.XPATH_VARIABLE" baseAttributes="" />
+    <option name="XPATH.XPATH_NAME" baseAttributes="TEXT" />
+    <option name="XPATH.XPATH_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
     <option name="YAML_SCALAR_KEY">
       <value>
         <option name="FOREGROUND" value="f07178" />
