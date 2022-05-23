@@ -58,7 +58,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name=":centerFlex" value="display: flex;&#10;justify-content: center;&#10;align-items: center;" description="generates styles for a flex container with vertical &amp; horizontal centered children" toReformat="false" toShortenFQNames="true" deactivated="true">
+  <template name=":centerFlex" value="display: flex;&#10;justify-content: center;&#10;align-items: center;" description="generates styles for a flex container with vertical &amp; horizontal centered children" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="CSS" value="true" />
     </context>
@@ -76,7 +76,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name=":props" value="${props =&gt; props.$prop$}" description="inject css props" toReformat="false" toShortenFQNames="true" deactivated="true">
+  <template name=":props" value="${props =&gt; props.$prop$}" description="inject css props" toReformat="false" toShortenFQNames="true">
     <variable name="prop" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="CSS" value="true" />
